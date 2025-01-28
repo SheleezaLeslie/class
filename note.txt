@@ -1,0 +1,13 @@
+.gitignore file
+npm init -y
+
+npm i [no arguments] -> download dependencies 
+npm i lodash
+---------------------------------
+
+Npm init -y
+npm i express nodemon dotenv
+.env file -> PORT=9000
+create index.js
+nodemon index.js
+"type": "module" in package.json
