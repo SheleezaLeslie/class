@@ -13,23 +13,22 @@ import path from 'path';
 const PORT = process.env.PORT || 8000;
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
+        const webpage = fs.readFileSync('./pages/homepage.html');
         // sync to make sure things are sent in order
         // make html readFileSync, put index page html in there
-        res.write('eeeeeeeeeeee');
         res.end(webpage);
     } else if (req.url === '/about') {
-        const webpage = fs.readFileSync(path.join(__dirname, 'html', 'about.html'));
-        res.write('wwwwwwwwwwwwwwwwwwwords');
+        const webpage = fs.readFileSync(path.join('./pages/about.html'));
         res.end(webpage);
     } else if (req.url === '/login') {
-        res.write('login');
-        res.end();
+        const webpage = fs.readFileSync(path.join('./pages/login.html'));
+        res.end(webpage);
     } else if (req.url === '/register') {
-        res.write('register');
-        res.end();
+        const webpage = fs.readFileSync(path.join('./pages/register.html'));
+        res.end(webpage);
     } else if (req.url === '/logout') {
-        res.write('logout');
-        res.end();
+        const webpage = fs.readFileSync(path.join('./pages/logout.html'));
+        res.end(webpage);
     } else {
         res.write('page not foundaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
         res.end();
