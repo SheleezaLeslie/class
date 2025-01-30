@@ -14,7 +14,7 @@ router.get('/name', (req, res) => {
 
 //greeting
 router.get('/greeting', (req, res) => {
-    res.send('Dani, but 01068571')
+    res.send('Dani, but n01068571');
 });
 
 //add
