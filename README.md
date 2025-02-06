@@ -1,12 +1,15 @@
+This is a skeleton to help get my students started with their lab: uploading files and fetching files.
+
+
 to run apps
 
 client:
 
-open terminal to client folder
+open terminal to the client folder
 npm i
 npm run dev
 
-open new terminal to server folder
+open a new terminal to the server folder
 npm i
 npm run dev
 
