@@ -16,19 +16,4 @@ router.post("/single", upload.single("file"), (req, res) => {
   });
 });
 
-router.post("/multiple", upload.array("files", 10), (req, res) => {
-  console.log("Uploaded Files:", req.file);
-
-  if (!req.files) {
-    return res.status(400).json({ error: "No file uploaded" });
-  }
-  const filePaths = req.files.map((file) => `/uploads/${file.filename}`);
-
-
-  res.json({
-    message: "Image uploaded successfully",
-    filePath: filePaths,
-  });
-});
-
 export default router;
