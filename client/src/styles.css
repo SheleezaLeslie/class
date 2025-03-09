@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 450px;
+}
+
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  overflow-wrap: break-word;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="file"] {
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+img {
+  margin-top: 10px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto; 
+  max-height: 300px; 
+  object-fit: cover;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Flexbox for wrapping the images in a line (horizontally) */
+.images-container {
+  display: flex;
+  justify-content: start; 
+  flex-wrap: nowrap; 
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+.images-container img {
+  width: 200px; 
+  height: auto; 
+  object-fit: cover; /* Make sure images don’t get stretched */
+}

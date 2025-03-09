@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 
 app.get("/api-list", (req, res) => {
   const apiList = {
-    save_routes: ["/save/single", "/save/multiple", "save/dog"],
+    save_routes: ["/save/dog"],
     fetch_routes: ["/fetch/single", "/fetch/multiple"],
   };
 
