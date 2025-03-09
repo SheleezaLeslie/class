@@ -14,7 +14,7 @@ app.get('/', (req,res) => {
 });
 
 app.post('/', (req,res) => {
-    res.send('Welcome to the server - POST');
+    res.send('Welcome to the server - POST'); 
 });
 
 app.put('/', (req,res) => {
